@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #050505;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("img/banner1.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.9) 25%, rgba(0,0,0,0.3) 100%);
+}
+
+.navbar {
+  z-index: 10;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #c1121f !important;
+  letter-spacing: -1px;
+}
+
+.nav-link {
+  color: white !important;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #c1121f !important;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 800;
+  color: #c1121f;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-bottom: 35px;
+}
+
+.hero-button {
+  background: #c1121f;
+  color: white;
+  border: none;
+  padding: 16px 34px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.hero-button:hover {
+  background: #a00f19;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(193, 18, 31, 0.3);
+}
+
+.carousel-image {
+  height: 450px;
+  object-fit: cover;
+}
+
+.scroll-down {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.scroll-down i {
+  font-size: 24px;
+  color: #c1121f;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.schedule-section, .pricing-section {
+  background: #050505;
+}
+
+.section-title, .pricing-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle, .pricing-subtitle {
+  color: #999;
+  font-size: 18px;
+}
+
+.schedule-table th {
+  background: #c1121f !important;
+  color: white !important;
+  padding: 20px !important;
+  border: none !important;
+}
+
+.schedule-table td {
+  background: #111 !important;
+  color: white !important;
+  padding: 18px !important;
+  border-color: rgba(255,255,255,.05) !important;
+}
+
+.schedule-table tr:hover td {
+  background: #1a1a1a !important;
+}
+
+.pricing-table th, .pricing-table td {
+  border-color: rgba(255,255,255,.05) !important;
+  padding: 25px 15px !important;
+  background: transparent !important;
+  color: white !important;
+}
+
+.feature-name {
+  text-align: left;
+  font-weight: 500;
+}
+
+.plan-header {
+  padding: 20px;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.plan-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.currency {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #c1121f;
+  line-height: 1;
+}
+
+.month {
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.featured-plan {
+  background: rgba(193, 18, 31, .05);
+  border: 1px solid rgba(193, 18, 31, .3);
+  box-shadow: 0 0 30px rgba(193, 18, 31, .1);
+}
+
+.popular-badge {
+  background: #c1121f;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  top: -15px !important;
+}
+
+.check-icon {
+  color: #c1121f;
+  font-size: 22px;
+}
+
+.footer {
+  padding: 25px 0;
+  border-top: 1px solid rgba(255,255,255,.05);
+  color: #888;
+  background: #000;
+}
+
+@media (max-width: 992px) {
+  .hero-title { font-size: 48px; }
+  .pricing-title, .section-title { font-size: 32px; }
+  .value { font-size: 36px; }
+  .carousel-image { height: 350px; }
+}
+
+@media (max-width: 768px) {
+  .navbar { background: rgba(0,0,0,.95) !important; padding: 15px 0; }
+  .nav-link { margin-left: 0; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .hero-title { font-size: 42px; }
+  .hero-text { font-size: 16px; }
+  .pricing-table td, .pricing-table th { padding: 15px 10px !important; }
+  .feature-name { font-size: 14px; white-space: normal; }
+  .carousel-image { height: 250px; }
+}

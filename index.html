@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerFit Academia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero-section">
+    <div class="overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent transition-navbar">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html">PowerFit</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagina2.html">Treinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pagina3.html">Planos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Modalidades</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="pagina2.html">Musculação</a></li>
+                <li><a class="dropdown-item" href="pagina2.html">Funcional</a></li>
+                <li><a class="dropdown-item" href="pagina2.html">Crossfit</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-content container mt-5">
+      <div class="row align-items-center h-100 g-5">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <h1 class="hero-title">FAÇA O QUE TE FAZ BEM</h1>
+          <p class="hero-text">Estrutura premium, equipamentos modernos e profissionais preparados para transformar sua rotina.</p>
+          <button class="hero-button" data-bs-toggle="modal" data-bs-target="#modalAcademia">Quero conhecer a academia</button>
+        </div>
+        <div class="col-lg-7">
+          <div id="carouselAcademia" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselAcademia" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carouselAcademia" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselAcademia" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/academia-boutique-scaled.jpg" class="d-block w-100 carousel-image" alt="Academia">
+              </div>
+              <div class="carousel-item">
+                <img src="img/cardio.jpg" class="d-block w-100 carousel-image" alt="cardio">
+              </div>
+              <div class="carousel-item">
+                <img src="img/cardio.jpg" class="d-block w-100 carousel-image" alt="Crossfit">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAcademia" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAcademia" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down d-none d-md-block">
+      <p>Confira nossos horários</p>
+      <i class="bi bi-chevron-down"></i>
+    </div>
+  </header>
+
+  <main>
+    <section class="schedule-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Horários de Funcionamento</h2>
+          <p class="section-subtitle">Flexibilidade para treinar quando quiser</p>
+        </div>
+        <div class="table-responsive shadow-sm rounded-3">
+          <table class="table schedule-table align-middle text-center mb-0">
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Segunda</td><td>05:30 - 23:00</td></tr>
+              <tr><td>Terça</td><td>05:30 - 23:00</td></tr>
+              <tr><td>Quarta</td><td>05:30 - 23:00</td></tr>
+              <tr><td>Quinta</td><td>05:30 - 23:00</td></tr>
+              <tr><td>Sexta</td><td>05:30 - 23:00</td></tr>
+              <tr><td>Sábado</td><td>08:00 - 18:00</td></tr>
+              <tr><td>Domingo</td><td>08:00 - 14:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-0">© 2026 PowerFit Academia</p>
+      <div class="social-links mt-3 mt-md-0 d-flex gap-3">
+        <a href="#" class="text-secondary"><i class="bi bi-instagram fs-5"></i></a>
+        <a href="#" class="text-secondary"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="#" class="text-secondary"><i class="bi bi-whatsapp fs-5"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="modalAcademia" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-secondary">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title text-danger fw-bold">Agende sua visita</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Venha conhecer nossa estrutura premium e treine gratuitamente no primeiro dia. Preencha seus dados na recepção.</p>
+        </div>
+        <div class="modal-footer border-secondary">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-danger">Confirmar Interesse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

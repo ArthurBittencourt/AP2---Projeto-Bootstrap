@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos - PowerFit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pt-5">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top border-bottom border-dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html">PowerFit</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="pagina2.html">Treinos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="pagina3.html">Planos</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Modalidades</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="pagina2.html">Musculação</a></li>
+                <li><a class="dropdown-item" href="pagina2.html">Funcional</a></li>
+                <li><a class="dropdown-item" href="pagina2.html">Crossfit</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pricing-section py-5 mt-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="pricing-title">Escolha Seu Plano</h1>
+        <p class="pricing-subtitle">Estrutura premium para elevar seus resultados</p>
+      </div>
+      <div class="table-responsive shadow-lg rounded-4">
+        <table class="table pricing-table table-dark align-middle text-center mb-0 border-dark">
+          <thead>
+            <tr>
+              <th class="border-0"></th>
+              <th class="border-0">
+                <div class="plan-header">
+                  <h2>Econômico</h2>
+                  <div class="price">
+                    <span class="currency">R$</span><span class="value">149,90</span><span class="month">/mês</span>
+                  </div>
+                </div>
+              </th>
+              <th class="border-0">
+                <div class="plan-header featured-plan position-relative">
+                  <div class="popular-badge position-absolute top-0 start-50 translate-middle">MAIS POPULAR</div>
+                  <h2 class="mt-3">Clássico</h2>
+                  <div class="price">
+                    <span class="currency">R$</span><span class="value">179,90</span><span class="month">/mês</span>
+                  </div>
+                </div>
+              </th>
+              <th class="border-0">
+                <div class="plan-header">
+                  <h2>Premium</h2>
+                  <div class="price">
+                    <span class="currency">R$</span><span class="value">209,90</span><span class="month">/mês</span>
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">Aplicativo de treino</td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i></td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i></td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Musculação</td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i></td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i></td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Aulas coletivas</td>
+              <td class="text-secondary">-</td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i><p class="mb-0 text-secondary small">(1 modalidade)</p></td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i><p class="mb-0 text-secondary small">(Todas)</p></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Avaliação física</td>
+              <td class="text-secondary">-</td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i><p class="mb-0 text-secondary small">(Semestral)</p></td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i><p class="mb-0 text-secondary small">(Trimestral)</p></td>
+            </tr>
+            <tr>
+              <td class="feature-name">Recovery</td>
+              <td class="text-secondary">-</td>
+              <td class="text-secondary">-</td>
+              <td><i class="bi bi-check-circle-fill check-icon"></i><p class="mb-0 text-secondary small">(Livre)</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-0">© 2026 PowerFit Academia</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
